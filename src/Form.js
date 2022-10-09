@@ -6,13 +6,13 @@ export default function Form() {
                     <h2>Sign In</h2>
                     <div className='inputBox'>
                         <input type={'text'} required={true} />
-                        <span>Username</span>
-                        <i></i>
+                        <span children={'Username'} />
+                        <i />
                     </div>
                     <div className='inputBox'>
                         <input type={'password'} required={true} />
-                        <span>Password</span>
-                        <i></i>
+                        <span children={'Password'} />
+                        <i />
                     </div>
                     <div className="links">
                         <a href={'#'} children={'Forgot Password'} />

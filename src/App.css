@@ -6,7 +6,7 @@
   --mainbg: #23242a;
   --babyblue: lightpink;
   --blu:#45f3ff;
-  --width: 380px;
+  --width: 400px;
   --height: 420px;
 }
 
@@ -38,8 +38,6 @@
   border-radius: 8px;
   overflow: hidden;
   transition: 1s;
-
-  /* scale: 1.2; */
 }
 
 @media screen and (min-width: 600px) {
@@ -93,14 +91,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .form h2 {
   color: var(--babyblue);
   font-size: 2em;
   font-weight: 100;
-
 }
 
 .inputBox {
@@ -192,6 +189,7 @@
   border: none;
   border-radius: .4em;
   z-index: 20;
+  margin-top: 1em;
 }
 
 .submit:hover {
@@ -203,8 +201,12 @@
 @keyframes animate {
   0% {
     rotate: 0deg;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate((0deg));
   }
   100% {
     rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
